@@ -1,0 +1,4 @@
+uid: test_device
+ipmi_ip: __INSERT_IP_HERE__
+model: idrac9
+zombie: false

@@ -1,0 +1,3 @@
+name: press F1
+action_type: keystroke
+action_data: Keys.F1

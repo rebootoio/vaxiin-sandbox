@@ -1,0 +1,3 @@
+name: exit BIOS
+action_type: keystroke
+action_data: Keys.Escape;Keys.Enter

@@ -1,0 +1,3 @@
+name: ipmi lan print
+action_type: ipmitool
+action_data: lan print

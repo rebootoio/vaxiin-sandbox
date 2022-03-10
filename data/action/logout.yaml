@@ -1,0 +1,3 @@
+name: logout
+action_type: keystroke
+action_data: Keys.Control+c;exit;Keys.Enter

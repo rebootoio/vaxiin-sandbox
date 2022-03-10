@@ -1,0 +1,3 @@
+name: ctrl alt delete
+action_type: keystroke
+action_data: Keys.Control+Keys.Alt+Keys.Delete

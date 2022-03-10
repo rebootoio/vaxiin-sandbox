@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  vaxiin-server:
+    image: rebooto/vaxiin-server:latest
+    restart: always
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./:/db
+      - ./configs/server-config.yaml:/etc/vaxiin-server-config/config.yaml
+
+  vaxiin-handler:
+    depends_on:
+      - vaxiin-server
+    image: rebooto/vaxiin-handler:latest
+    restart: always
+    volumes:
+      - ./configs/handler-config.yaml:/etc/vaxiin-handler-config/config.yaml

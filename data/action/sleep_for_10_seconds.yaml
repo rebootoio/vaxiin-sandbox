@@ -1,0 +1,3 @@
+name: sleep for 10 seconds
+action_type: sleep
+action_data: 10

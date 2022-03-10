@@ -1,0 +1,3 @@
+name: power status
+action_type: power
+action_data: status
