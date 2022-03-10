@@ -4,8 +4,29 @@ The following quick-start guide will walk you through standing up the Vaxiin fra
 
 ## Installation Options
 
-- Docker Compose (TODO)
-- Docker (TODO)
+### CLI
+
+Go to the [latest release](https://github.com/rebootoio/vaxctl/releases/latest), download the binary and place it in a directory you have in your `PATH`
+
+### Server
+<details>
+<summary>Docker Compose</summary>
+
+   ```
+   docker-compose up -d
+   ```
+   
+</details>
+
+<details>
+<summary>Docker</summary>
+
+   ```
+   docker run -d -v $(pwd):/db -p 5000:5000 --rm rebooto/vaxiin-server
+   docker run -d --net host --rm rebooto/vaxiin-handler
+   ```
+</details>
+
 
 ## Next Steps
 
@@ -17,34 +38,36 @@ In this guide, we'll assume you have setup the environment, and provide you with
 
 ### In the Sandbox
 
-1. Create a set of out-of-band credentials for your target server
+1. Input a set of out-of-band credentials for your test server
 
-   Edit `cred/default.yaml` and add out-of-band credentials
+   Edit `data/cred/default.yaml` and add out-of-band credentials
+
+2. Input your test server details
+
+   Edit `data/device/test_device.yaml` adding the device's IPMI IP and model (per [this list](https://docs.vaxiin.io/faq#what-models-do-you-support))
+
+3. Load all of the data into your local Vaxiin instance
+
    ```
-   vaxctl apply cred -f cred/default.yaml
+   cd data
+   ./load_data.sh
    ```
 
-2. Create your target server
-
-   Edit `device/test_device.yaml` adding the device's IPMI IP.
-   ```
-   vaxctl apply device -f device/test_device.yaml
-   ```
-
-3. Get the state of your server
+4. Get the state of your test server
 
    ```
    vaxctl assign work -d test_device -a screenshot
    ```
 
-4. Wait about a minute and view the server's state and screenshot
+5. Wait about a minute and view the test server's obtained state and screenshot
 
    ```
    vaxctl get state -v
    vaxctl get screenshot -d test_device -f /tmp/test_device.png
    ```
+   You can view the screenshot via `open /tmp/test_device.png` (Mac) or `display /tmp/test_device.png` (Linux)
 
-5. Run a couple of non-destructive actions against the server and view their results
+6. Run a couple of non-destructive actions against the test server and view their results
 
    ```
    vaxctl assign work -d test_device -a 'power status','ipmi lan print'
