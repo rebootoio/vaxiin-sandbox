@@ -1,6 +1,28 @@
-# Quick Start
+<div id="top"></div>
+<div align="center">
+  <h1 align="center">Vaxiin Quick Start Guide</h1>
 
-The following quick-start guide will walk you through standing up the Vaxiin framework.
+  <p align="center">
+    A quick-start guide to walk you through bringing up the Vaxiin framework
+    <br />
+    <a href="https://docs.vaxiin.io"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/rebootoio/vaxiin-sandbox/issues/new?assignees=&labels=bug&template=bug_report.md&title=">Report Bug</a>
+    ·
+    <a href="https://github.com/rebootoio/vaxiin-sandbox/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=">Request Feature</a>
+  </p>
+    <a >
+    <img src='https://img.shields.io/github/v/tag/rebootoio/vaxiin-sandbox?style=for-the-badge'>
+  </a>
+  <a href='https://discord.gg/aEJ6qwcCGs'>
+    <img src='https://img.shields.io/discord/813371439469297674?style=for-the-badge'>
+  </a>
+  <a href='https://github.com/rebootoio/vaxiin-sandbox/blob/main/LICENSE'>
+    <img src='https://img.shields.io/github/license/rebootoio/vaxiin-sandbox?style=for-the-badge'>
+  </a>
+</div>
+
 
 ## Installation Options
 
@@ -73,3 +95,11 @@ In this guide, we'll assume you have setup the environment, and provide you with
    vaxctl assign work -d test_device -a 'power status','ipmi lan print'
    vaxctl get work -v
    ```
+   
+## License
+Distributed under the [AGPL-3.0 License](https://github.com/rebootoio/vaxiin-sandbox/blob/main/LICENSE) License.
+
+## Contact
+[Join the Rebooto Discord Server](https://discord.gg/aEJ6qwcCGs)
+
+[Open an issue](https://github.com/rebootoio/vaxiin-sandbox/issues)
