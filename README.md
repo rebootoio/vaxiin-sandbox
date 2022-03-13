@@ -37,7 +37,7 @@
 
 Go to the [latest release](https://github.com/rebootoio/vaxctl/releases/latest), download the binary and place it in a directory you have in your `PATH`
 
-### Server
+### Server & Handler
 <details>
 <summary>Docker Compose</summary>
 
