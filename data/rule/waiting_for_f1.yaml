@@ -2,5 +2,5 @@ name: Waiting for F1
 state_id: 1
 regex: Press F1
 actions:
-  - Press F1
+  - press F1
 enabled: false
