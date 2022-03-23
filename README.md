@@ -12,9 +12,6 @@
     ·
     <a href="https://github.com/rebootoio/vaxiin-sandbox/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=">Request Feature</a>
   </p>
-    <a >
-    <img src='https://img.shields.io/github/v/tag/rebootoio/vaxiin-sandbox?style=for-the-badge'>
-  </a>
   <a href='https://discord.gg/aEJ6qwcCGs'>
     <img src='https://img.shields.io/discord/813371439469297674?style=for-the-badge'>
   </a>
