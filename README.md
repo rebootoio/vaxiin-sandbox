@@ -55,14 +55,7 @@ Start by cloning this repository, and then select one of these options:
    ```
 </details>
 
-
-## Next Steps
-
-Now that you have Vaxiin up and running, you can begin healing zombies.\
-https://docs.vaxiin.io contains the full documentation, including a [detailed walkthrough](https://docs.vaxiin.io/getting-started/walkthrough).\
-The list of supported hardware models can be found [here](https://docs.vaxiin.io/faq#what-models-do-you-support).
-
-In this guide, we'll assume you have setup the environment, and provide you with some ready-made actions and rules.
+That's it, you're ready to go!
 
 ### In the Sandbox
 
@@ -101,11 +94,17 @@ In this guide, we'll assume you have setup the environment, and provide you with
    vaxctl assign work -d test_device -a 'power status','ipmi lan print'
    vaxctl get work -v
    ```
-   
-## License
-Distributed under the [AGPL-3.0 License](https://github.com/rebootoio/vaxiin-sandbox/blob/main/LICENSE) License.
+
+## Next Steps
+
+https://docs.vaxiin.io contains the full documentation, including a [detailed walkthrough](https://docs.vaxiin.io/getting-started/walkthrough)
+and [installation instructions](https://docs.vaxiin.io/installation/overview).  
+The list of supported hardware models can be found [here](https://docs.vaxiin.io/faq#what-models-do-you-support).
 
 ## Contact
-[Join the Rebooto Discord Server](https://discord.gg/aEJ6qwcCGs)
+We're happy to help at the [Rebooto Discord Server](https://discord.gg/aEJ6qwcCGs)!
 
-[Open an issue](https://github.com/rebootoio/vaxiin-sandbox/issues)
+Found a problem / have a feature request? [Open an issue](https://github.com/rebootoio/vaxiin-sandbox/issues)!
+
+## License
+Distributed under the [AGPL-3.0 License](https://github.com/rebootoio/vaxiin-sandbox/blob/main/LICENSE) License.
