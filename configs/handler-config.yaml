@@ -1,6 +1,0 @@
----
-vaxiin_server_host: vaxiin-server
-vaxiin_server_port: 5000
-check_work_interval: 1
-max_parallel_work: 3
-pause_between_keys: 5

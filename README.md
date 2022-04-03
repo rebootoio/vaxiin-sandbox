@@ -46,26 +46,14 @@
 
 Go to the [latest release](https://github.com/rebootoio/vaxctl/releases/latest), download the binary and place it in a directory you have in your `PATH`
 
-### Server & Handler
+### Server
 
-Start by cloning this repository, and then select one of these options:   
-<details>
-<summary>Docker Compose</summary>
+Clone this repository, and then run:
 
-   ```
-   docker-compose up -d
-   ```
-   
-</details>
-
-<details>
-<summary>Docker</summary>
-
-   ```
-   docker run -d -v $(pwd):/db -p 5000:5000 --rm rebooto/vaxiin-server
-   docker run -d --net host --rm rebooto/vaxiin-handler
-   ```
-</details>
+```
+cd vaxiin-sandbox
+docker run -d -v $(pwd):/db -p 5000:5000 --rm rebooto/vaxiin-server
+```
 
 That's it, you're ready to go!
 
@@ -117,7 +105,6 @@ The list of supported hardware models can be found [here](https://docs.vaxiin.io
 | Component | Repoistory | Artifact | Documentation |
 |-----------|------------|----------|------|
 | Server | [GitHub](https://github.com/rebootoio/vaxiin-server) | [DockerHub](https://hub.docker.com/repository/docker/rebooto/vaxiin-server) | [Docs](https://docs.vaxiin.io/configuration/server) |
-| Handler | [GitHub](https://github.com/rebootoio/vaxiin-handler) | [DockerHub](https://hub.docker.com/repository/docker/rebooto/vaxiin-handler) | [Docs](https://docs.vaxiin.io/configuration/handler) |
 | Agent | [GitHub](https://github.com/rebootoio/vaxiin-agent) | [DockerHub](https://hub.docker.com/repository/docker/rebooto/vaxiin-agent) | [Docs](https://docs.vaxiin.io/configuration/agent) |
 | CLI | [GitHub](https://github.com/rebootoio/vaxctl)| [Release](https://github.com/rebootoio/vaxctl/releases) | [Docs](https://docs.vaxiin.io/configuration/cli) |
 
