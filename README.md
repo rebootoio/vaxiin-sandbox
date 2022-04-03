@@ -84,9 +84,8 @@ That's it, you're ready to go!
 
    ```
    vaxctl get state -v
-   vaxctl get screenshot -d test_device -f /tmp/test_device.png
+   vaxctl get screenshot -d test_device
    ```
-   You can view the screenshot via `open /tmp/test_device.png` (Mac) or `display /tmp/test_device.png` (Linux)
 
 6. Run a couple of non-destructive actions against the test server and view their results
 
@@ -98,8 +97,7 @@ That's it, you're ready to go!
 ## Next Steps
 
 https://docs.vaxiin.io contains the full documentation, including a [detailed walkthrough](https://docs.vaxiin.io/getting-started/walkthrough)
-and [installation instructions](https://docs.vaxiin.io/installation/overview).  
-The list of supported hardware models can be found [here](https://docs.vaxiin.io/faq#what-models-do-you-support).
+and [installation instructions](https://docs.vaxiin.io/installation/overview). The list of supported hardware models can be found [here](https://docs.vaxiin.io/faq#what-models-do-you-support).
 
 ## Components
 | Component | Repoistory | Artifact | Documentation |
