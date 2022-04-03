@@ -3,7 +3,7 @@ host: 0.0.0.0
 port: 5000
 db_path: '/db'
 automatic_recovery: false
-match_open_states_interval: 300
+periodic_work_assignment_interval: 300
 get_zombie_screenshot_interval: 300
 retry_rule_interval: 60
 update_state_interval: 60
