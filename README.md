@@ -18,15 +18,27 @@
   <a href='https://github.com/rebootoio/vaxiin-sandbox/blob/main/LICENSE'>
     <img src='https://img.shields.io/github/license/rebootoio/vaxiin-sandbox?style=for-the-badge'>
   </a>
+  <!--
+  <p align="center">
+    <b>Vaxiin is a cure for zombie server infections.</b><br/ >
+    Or in more technical terms:
+    <br />
+    <b>Vaxiin is an out-of-band automation framework</b> allowing for:<br>
+      failure detection<br />
+      remote state extraction<br />
+      human and machine recovery emulation<br />
+    </ul>
+  </p>
+  -->
 </div>
 
-## Components
-| Component | Repoistory | Artifact | Documentation |
-|-----------|------------|----------|------|
-| Server | [GitHub](https://github.com/rebootoio/vaxiin-server) | [DockerHub](https://hub.docker.com/repository/docker/rebooto/vaxiin-server) | [Docs](https://docs.vaxiin.io/configuration/server) |
-| Handler | [GitHub](https://github.com/rebootoio/vaxiin-handler) | [DockerHub](https://hub.docker.com/repository/docker/rebooto/vaxiin-handler) | [Docs](https://docs.vaxiin.io/configuration/handler) |
-| Agent | [GitHub](https://github.com/rebootoio/vaxiin-agent) | [DockerHub](https://hub.docker.com/repository/docker/rebooto/vaxiin-agent) | [Docs](https://docs.vaxiin.io/configuration/agent) |
-| CLI | [GitHub](https://github.com/rebootoio/vaxctl)| [Release](https://github.com/rebootoio/vaxctl/releases) | [Docs](https://docs.vaxiin.io/configuration/cli) |
+## Overview
+**Vaxiin is an out-of-band automation framework** allowing for:  
+- failure detection
+- remote state extraction
+- human and machine recovery emulation
+
+
 
 ## Installation Options
 
@@ -100,6 +112,14 @@ That's it, you're ready to go!
 https://docs.vaxiin.io contains the full documentation, including a [detailed walkthrough](https://docs.vaxiin.io/getting-started/walkthrough)
 and [installation instructions](https://docs.vaxiin.io/installation/overview).  
 The list of supported hardware models can be found [here](https://docs.vaxiin.io/faq#what-models-do-you-support).
+
+## Components
+| Component | Repoistory | Artifact | Documentation |
+|-----------|------------|----------|------|
+| Server | [GitHub](https://github.com/rebootoio/vaxiin-server) | [DockerHub](https://hub.docker.com/repository/docker/rebooto/vaxiin-server) | [Docs](https://docs.vaxiin.io/configuration/server) |
+| Handler | [GitHub](https://github.com/rebootoio/vaxiin-handler) | [DockerHub](https://hub.docker.com/repository/docker/rebooto/vaxiin-handler) | [Docs](https://docs.vaxiin.io/configuration/handler) |
+| Agent | [GitHub](https://github.com/rebootoio/vaxiin-agent) | [DockerHub](https://hub.docker.com/repository/docker/rebooto/vaxiin-agent) | [Docs](https://docs.vaxiin.io/configuration/agent) |
+| CLI | [GitHub](https://github.com/rebootoio/vaxctl)| [Release](https://github.com/rebootoio/vaxctl/releases) | [Docs](https://docs.vaxiin.io/configuration/cli) |
 
 ## Contact
 We're happy to help at the [Rebooto Discord Server](https://discord.gg/aEJ6qwcCGs)!
