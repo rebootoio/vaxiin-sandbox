@@ -33,12 +33,11 @@
 </div>
 
 ## Overview
-**Vaxiin is an out-of-band automation framework** allowing for:  
+**Vaxiin is a out-of-band automation framework** allowing for:  
 - failure detection
 - remote state extraction
 - human and machine recovery emulation
-
-
+- vendor-agnostic automation
 
 ## Installation Options
 
@@ -97,7 +96,8 @@ That's it, you're ready to go!
 ## Next Steps
 
 https://docs.vaxiin.io contains the full documentation, including a [detailed walkthrough](https://docs.vaxiin.io/getting-started/walkthrough)
-and [installation instructions](https://docs.vaxiin.io/installation/overview). The list of supported hardware models can be found [here](https://docs.vaxiin.io/faq#what-models-do-you-support).
+and [installation instructions](https://docs.vaxiin.io/installation/overview).  
+The latest list of supported hardware models can be found [here](https://docs.vaxiin.io/faq#what-models-do-you-support).
 
 ## Components
 | Component | Repoistory | Artifact | Documentation |
