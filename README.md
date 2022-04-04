@@ -41,7 +41,7 @@
 
 ## Quick demo
 
-![Vaxiin demo](https://www.vaxiin.io/assets/images/vaxctl_usage_50-b32c56366288fcdb0721680316d717f8.gif)
+![vaxiin demo](https://www.vaxiin.io/assets/images/vaxctl_usage_33-cb32f83b291cf3067df75c2d7b1668db.gif)
 
 ## Installation Options
 
