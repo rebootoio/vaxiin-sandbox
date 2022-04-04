@@ -33,7 +33,7 @@
 </div>
 
 ## Overview
-**Vaxiin is a out-of-band automation framework** allowing for:  
+**Vaxiin is an out-of-band automation framework** allowing for:  
 - failure detection
 - remote state extraction
 - human and machine recovery emulation
