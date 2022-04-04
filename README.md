@@ -39,11 +39,11 @@
 - human and machine recovery emulation
 - vendor-agnostic automation
 
-## Quick demo
+## Vaxiin in under a minute
 
 ![vaxiin demo](https://www.vaxiin.io/assets/images/vaxctl_usage_33-945e1d8274c6b228e60374390c70ee90.gif)
 
-## Installation Options
+## Installation
 
 ### CLI
 
@@ -58,7 +58,7 @@ cd vaxiin-sandbox
 docker run -d -v $(pwd):/db -p 5000:5000 --rm rebooto/vaxiin-server
 ```
 
-That's it, you're ready to go!
+**That's it, you're ready to go!**
 
 ### In the Sandbox
 
