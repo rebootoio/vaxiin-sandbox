@@ -39,6 +39,10 @@
 - human and machine recovery emulation
 - vendor-agnostic automation
 
+## Quick demo
+
+![Vaxiin demo](https://www.vaxiin.io/assets/images/vaxctl_usage_50-b32c56366288fcdb0721680316d717f8.gif)
+
 ## Installation Options
 
 ### CLI
