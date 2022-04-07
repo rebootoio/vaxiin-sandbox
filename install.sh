@@ -12,7 +12,7 @@ fi
 git clone https://github.com/rebootoio/vaxiin-sandbox.git
 cd vaxiin-sandbox
 
-VAXCTL_VERSION="$(curl -s https://api.github.com/repos/rebootoio/vaxctl/releases/latest |grep '"tag_name"' | sed -E 's/.*"(v[0-9\.]+)".*/\1/')"
+VAXCTL_VERSION="$(curl -s https://api.github.com/repos/rebootoio/vaxctl/releases/latest |grep '"tag_name"' | grep -oE 'v[0-9\.]+')"
 curl -s -L -o vaxctl.zip https://github.com/rebootoio/vaxctl/releases/download/${VAXCTL_VERSION}/vaxctl_${VAXCTL_VERSION}_${MY_OS}_amd64.zip
 unzip vaxctl.zip
 rm vaxctl.zip
