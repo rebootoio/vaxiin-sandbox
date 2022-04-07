@@ -43,59 +43,93 @@
 
 ![vaxiin demo](https://www.vaxiin.io/assets/images/vaxctl_usage_33-945e1d8274c6b228e60374390c70ee90.gif)
 
-## Installation
-
-### CLI
-
-Go to the [latest release](https://github.com/rebootoio/vaxctl/releases/latest), download the binary and place it in a directory you have in your `PATH`
-
-### Server
-
-Clone this repository, and then run:
+## Installation options
 
 ```
+curl https://raw.githubusercontent.com/rebootoio/vaxiin-sandbox/main/install.sh | bash
 cd vaxiin-sandbox
-docker run -d -v $(pwd):/db -p 5000:5000 --rm rebooto/vaxiin-server
 ```
+Or...
+<details>
+  <summary>
+    I want to do it myself
+  </summary>
 
+- Server
+  
+  ```
+  git clone https://github.com/rebootoio/vaxiin-sandbox.git
+  cd vaxiin-sandbox
+  docker run -d -v $(pwd):/db -p 5000:5000 --rm rebooto/vaxiin-server
+  ```
+- CLI
+  
+  Go to the [latest release](https://github.com/rebootoio/vaxctl/releases/latest), download the binary and unzip it to the `vaxiin-sandbox` directory.
+</details>
+  
 **That's it, you're ready to go!**
 
-### In the Sandbox
+## In the Sandbox
 
-1. Input a set of out-of-band credentials for your test server
+<details>
+  <summary>
+    <b>No test server needed</b> - I want to try out screenshots, OCR and rules
+  </summary>
+  
+- Open the screenshot used to create a rule
+  
+  ```
+  ./vaxctl get screenshot -r "exit bios ilo4"
+  ```
+  
+- Edit the rule and play around with the regex
+  
+  ```
+  ./vaxctl edit rule -n "exit bios ilo4"
+  ```
+  
+</details>
 
-   Edit `data/cred/default.yaml` and add out-of-band credentials
+<details>
+  <summary>
+    <b>I have a test server</b> - I want to interact with it
+  </summary>
 
-2. Input your test server details
 
-   Edit `data/device/test_device.yaml` adding the device's IPMI IP and model (per [this list](https://docs.vaxiin.io/faq#what-models-do-you-support))
+- Input a set of out-of-band credentials for your test server
 
-3. Load all of the data into your local Vaxiin instance
+  Edit `data/cred/default.yaml` and add out-of-band credentials
 
-   ```
-   cd data
-   ./load_data.sh
-   ```
+- Input your test server details
 
-4. Get the state of your test server
+  Edit `data/device/test_device.yaml` adding the device's IPMI IP and model (per [this list](https://docs.vaxiin.io/faq#what-models-do-you-support))
 
-   ```
-   vaxctl assign work -d test_device -a screenshot
-   ```
+- Load all of the data into your local Vaxiin instance
 
-5. Wait about a minute and view the test server's obtained state and screenshot
+  ```
+  ./data/load_data.sh
+  ```
 
-   ```
-   vaxctl get state -v
-   vaxctl get screenshot -d test_device
-   ```
+- Get the state of your test server
 
-6. Run a couple of non-destructive actions against the test server and view their results
+  ```
+  ./vaxctl assign work -d test_device -a screenshot
+  ```
 
-   ```
-   vaxctl assign work -d test_device -a 'power status','ipmi lan print'
-   vaxctl get work -v
-   ```
+- Wait about a minute and view the test server's obtained state and screenshot
+
+  ```
+  ./vaxctl get state -v
+  ./vaxctl get screenshot -d test_device
+  ```
+
+- Run a couple of non-destructive actions against the test server and view their results
+
+  ```
+  ./vaxctl assign work -d test_device -a 'power status','ipmi lan print'
+  ./vaxctl get work -v
+  ```
+</details>
 
 ## Next Steps
 
