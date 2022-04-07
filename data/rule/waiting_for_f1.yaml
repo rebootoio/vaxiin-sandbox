@@ -1,6 +1,0 @@
-name: Waiting for F1
-state_id: 1
-regex: Press F1
-actions:
-  - press F1
-enabled: false
