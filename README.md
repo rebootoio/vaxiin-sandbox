@@ -60,7 +60,7 @@ Or...
   ```
   git clone https://github.com/rebootoio/vaxiin-sandbox.git
   cd vaxiin-sandbox
-  docker run -d -v $(pwd):/db -p 5000:5000 --rm rebooto/vaxiin-server
+  docker run -d -v $(pwd):/db -p 5000:5000 --pull always --rm rebooto/vaxiin-server
   ```
 - CLI
   

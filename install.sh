@@ -17,5 +17,5 @@ curl -s -L -o vaxctl.zip https://github.com/rebootoio/vaxctl/releases/download/$
 unzip vaxctl.zip
 rm vaxctl.zip
 
-docker run -d -v $(pwd):/db -p 5000:5000 --rm rebooto/vaxiin-server
+docker run -d -v $(pwd):/db -p 5000:5000 --pull always --rm rebooto/vaxiin-server
 
