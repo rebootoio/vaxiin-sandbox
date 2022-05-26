@@ -18,22 +18,14 @@
   <a href='https://github.com/rebootoio/vaxiin-sandbox/blob/main/LICENSE'>
     <img src='https://img.shields.io/github/license/rebootoio/vaxiin-sandbox?style=for-the-badge'>
   </a>
-  <!--
-  <p align="center">
-    <b>Vaxiin is a cure for zombie server infections.</b><br/ >
-    Or in more technical terms:
-    <br />
-    <b>Vaxiin is an out-of-band automation framework</b> allowing for:<br>
-      failure detection<br />
-      remote state extraction<br />
-      human and machine recovery emulation<br />
-    </ul>
-  </p>
-  -->
 </div>
 
 ## Overview
-**Vaxiin is an out-of-band automation framework** allowing for:  
+Vaxiin is an **autonomous [zombie](https://docs.vaxiin.io/#wait-what-zombies) recovery machine**.
+
+Or in more technical terms
+
+Vaxiin is an **out-of-band automation framework** allowing for:  
 - failure detection
 - remote state extraction
 - human and machine recovery emulation
